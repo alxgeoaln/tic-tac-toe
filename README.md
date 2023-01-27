@@ -1,6 +1,8 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+https://user-images.githubusercontent.com/23573176/215154375-f7f0bf7d-f918-43ad-84c5-dfd6249c95a0.mov
+
+https://github.com/alxgeoaln/tic-tac-toe-sv -> server
 
 ## Available Scripts
 
