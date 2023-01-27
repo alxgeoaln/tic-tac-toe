@@ -1,0 +1,12 @@
+diff --git a/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js b/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js
+index c0da822..a52b549 100644
+--- a/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js
++++ b/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js
+@@ -45,6 +45,7 @@ function XMLHttpRequest(opts) {
+   var self = this;
+   var http = require('http');
+   var https = require('https');
++  var {setImmediate} = require('timers')
+ 
+   // Holds http.js objects
+   var request;
