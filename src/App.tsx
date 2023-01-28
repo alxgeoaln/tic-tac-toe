@@ -17,14 +17,6 @@ function App() {
 
   return (
     <div className="App flex flex-col justify-center items-center bg-green">
-      {
-        !gameStarted ?
-          (<div className='self-center'>
-            <Loading />
-          </div>
-          ) : null
-      }
-
       {gameStarted ?
         <>
           <h1 className='text-3xl font-bold text-dark'>Your sign is: {sign}</h1>
@@ -33,7 +25,10 @@ function App() {
             <Board victoryPath={victoryPath} onPlaceSign={handleOnPlaceSign} board={board} />
           </div>
         </>
-        : null}
+        : <div className='self-center'>
+          <Loading />
+        </div>
+      }
     </div>
   );
 }

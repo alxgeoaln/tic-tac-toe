@@ -2,7 +2,7 @@ import { Socket } from "socket.io-client";
 
 import { Board, Sign, VictoryPath } from "./useBoard.type";
 import { emitPlaceSign, onBoard, onSign, onTurn, onVictoryPath } from "../../common/constants";
-import { useEffect, useState } from "react";;
+import { useEffect, useState } from "react";
 
 
 const useBoard = (socket: Socket) => {
@@ -12,7 +12,7 @@ const useBoard = (socket: Socket) => {
     const [victoryPath, setVictoryPath] = useState<VictoryPath>();
 
     useEffect(() => {
-        socket.on(onBoard, (board) => {
+        socket.on(onBoard, (board: Board) => {
             setBoard(board);
         })
 
